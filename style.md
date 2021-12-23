@@ -498,3 +498,175 @@ $('#alarm-fullscreen-toggler').on('click', function (e) {
 
 ```
 
+#### 11.自动换行
+
+```
+word-wrap:break-word;
+```
+
+#### 12.自动换行
+
+```
+.item {
+    background-color: #fff;
+    width: 46%;
+    padding-bottom: 10px;
+    float: left;
+    margin-left: 2.7%;
+    margin-top: 10px;
+}  
+```
+
+#### 13.等待框
+
+```
+        <div id="loading" class="loading">
+                <!-- <div class="iconfont icon-loading_" id="xuanzhun" style="width: 30px; height: 30px; background-color: aquamarine;"> -->
+            
+       <div class="iconfont icon-loading_" id="xuanzhun" style="color: #ff0000"></div>
+       <!-- <div class="loading_text">玩命加载中...</div> -->
+        </div> 
+        
+        .loading{  
+    width:80px;  
+    height:80px;  
+    position: fixed;  
+    top: 43%;
+    left: 37%;
+    line-height:56px;  
+    color:#fff;  
+    padding-left:60px;  
+    font-size:15px;  
+    background: #000 ;  
+    opacity: 0.5;  
+    z-index:9999;  
+    -moz-border-radius:5px;  
+    -webkit-border-radius:5px;  
+    border-radius:5px;  
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);  
+} 
+
+#xuanzhun{
+    position: fixed;  
+    top: 45%;
+    left: 43%;
+    font-size: 1.3rem;
+ -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}
+
+```
+
+#### 14.点击链接标签激活
+
+```
+ $(document).ready(function(){
+        $(".wz-nav-li li a").each(function(){ 
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $this.addClass("hover");  
+            }  
+        });  
+    });  
+
+```
+
+#### 15.箭头右
+
+```
+.mui-navigate-right:after, .mui-push-right:after {
+    right: 15px;
+    content: '\e583';
+}
+mui.min.css:5
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+    font-family: Muiicons;
+    font-size: inherit;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #bbb;
+    -webkit-font-smoothing: antialiased;
+}
+```
+
+#### 16.输入框自适应高度
+
+```
+function readyNumber() { 
+
+  $('#textarea').each(function () {
+     this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+  }).on('input', function () {
+  this.style.height = 'auto';
+  this.style.height = (this.scrollHeight)-10 + 'px';
+  this.style.width = 95+'%';
+
+console.log(this.scrollHeight)
+  })
+}
+
+readyNumber()
+
+```
+
+#### 17.常用字体
+
+```
+中文网  http://www.googlefonts.cn/
+常用安全 font-family: Arial, Helvetica, sans-serif;
+显示器中最清晰的字体。CSS 写法：font-family: Verdana, Geneva, sans-serif;
+```
+
+#### 18.自适应头像
+
+```
+.store_logo{
+    float: left;
+      width: 15%;
+    padding-top: 15%;
+    margin-right: 2.8%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+ -moz-border-radius:50%;
+    position: relative;
+}
+
+.store_logo image{
+
+    position: absolute;
+    left: 16%;
+    top: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+```
+
