@@ -644,18 +644,16 @@ readyNumber()
 
 ```
 .store_logo{
-    float: left;
-      width: 15%;
+     width: 15%;
     padding-top: 15%;
     margin-right: 2.8%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
- -moz-border-radius:50%;
+   -moz-border-radius:50%;
     position: relative;
 }
 
-.store_logo image{
-
+.store_logo img{
     position: absolute;
     left: 16%;
     top: 3px;
@@ -668,5 +666,14 @@ readyNumber()
 
 }
 
+```
+
+#### 19.ionic icon(图标)
+
+```
+//国内cdn加速
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+<i class="icon ion-star"></i>
+<i class = "icon ion-happy-outline"></i>
 ```
 
